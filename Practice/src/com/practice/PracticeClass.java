@@ -1,29 +1,29 @@
 package com.practice;
 
+import java.util.Arrays;
+
 public class PracticeClass {
 
 	public static void main(String[] args) {
 
-		int[] arr = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 114, 117, 119 };
-		int target = 90;
-		int index = binarySearch(arr, target);
-		System.out.println(index);
+		int[] arr = { 10, 20,20,20,20, 30,30,30 ,40,40,40,40};
+		int k = removeDuplicates(arr);
+        System.out.println("The array after removing duplicate elements is ");
+        for (int i = 0; i < k; i++) {
+            System.out.print(arr[i] + " ");
+        }
 	}
-
-	public static int binarySearch(int[] arr, int target) {
-		int start = 0;
-		int end = arr.length-1;
-		while (end >= start) {
-			int mid = start + (end - start) / 2;
-			if (target > arr[mid]) {
-				start = mid + 1;
-			} else if (target < arr[mid]) {
-				end = mid - 1;
-			} else if (target == arr[mid]) {
-				return mid;
+	
+	public static int removeDuplicates(int[] arr) {
+		int i=0;
+		for(int j=1; j<arr.length; j++) {
+			if(arr[i]!= arr[j]) {
+			i++;
+			arr[i]=arr[j];
 			}
 		}
-		return -1;
+		return i+1;
 	}
+
 
 }
