@@ -5,25 +5,17 @@ import java.util.Arrays;
 public class PracticeClass {
 
 	public static void main(String[] args) {
+		int[] arr = { 5, 4, 2, 3, 7 };
 
-		int[] arr = { 10, 20,20,20,20, 30,30,30 ,40,40,40,40};
-		int k = removeDuplicates(arr);
-        System.out.println("The array after removing duplicate elements is ");
-        for (int i = 0; i < k; i++) {
-            System.out.print(arr[i] + " ");
-        }
+		System.out.println(Arrays.toString(sortArray(arr)));
+
 	}
-	
-	public static int removeDuplicates(int[] arr) {
-		int i=0;
-		for(int j=1; j<arr.length; j++) {
-			if(arr[i]!= arr[j]) {
-			i++;
-			arr[i]=arr[j];
-			}
+
+	public static int[] sortArray(int[] arr) {
+
+		for (int i = 0; i < arr.length; i++) {
+
 		}
-		return i+1;
+		return arr;
 	}
-
-
 }
