@@ -1,4 +1,4 @@
-package com.learn.Basic;
+package com.learn.Singly;
 
 public class LL {
 
