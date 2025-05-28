@@ -8,11 +8,11 @@ public class Main {
 		list.insertFirst(20);
 		list.insertFirst(30);
 		list.insertFirst(40);
-		list.displayLL();
+//		list.displayLL();
 		System.out.println();
 		
 		list.insertLast(5);
-		list.displayLL();
+//		list.displayLL();
 		System.out.println();
 		
 		list.insertAt(50, 0);
@@ -20,16 +20,16 @@ public class Main {
 		list.displayLL();
 		System.out.println();
 		
-		list.deleteFirst();
-		list.displayLL();
+//		list.deleteFirst();
+//		list.displayLL();
 		
-		list.getNode(4);
+//		list.getNode(4);
 		
-		list.deleteLast();
-		list.displayLL();
+//		list.deleteLast();
+//		list.displayLL();
 		
-		list.deleteAt(3);
-		list.displayLL();
+//		list.deleteAt(3);
+//		list.displayLL();
 	}
 
 }

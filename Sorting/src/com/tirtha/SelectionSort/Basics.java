@@ -5,8 +5,8 @@ import java.util.Arrays;
 public class Basics {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8 };
+		// It says to shift the smallest element to shift left and when you find a small element swap.
+		int[] arr = { 7,1, 2, 3, 5, 6, 8,4 };
 		sortArray(arr);
 	}
 

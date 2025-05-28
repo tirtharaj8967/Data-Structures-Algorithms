@@ -10,7 +10,7 @@ public class Phone {
 	
 	public Phone(String oS, int ram, String brand, long battery) {
 		super();
-		OS = oS;
+		this.OS = oS;
 		this.ram = ram;
 		this.brand = brand;
 		this.battery = battery;

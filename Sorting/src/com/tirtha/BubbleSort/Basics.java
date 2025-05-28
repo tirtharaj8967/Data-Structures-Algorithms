@@ -3,7 +3,7 @@ package com.tirtha.BubbleSort;
 import java.util.Arrays;
 
 public class Basics {
-
+	//Swap again and again when the prev element is greater than current element and the last element get pushed to end
 	public static void main(String[] args) {
 		int[] arr = { 1, 23, 34, 21, 12, 89, 14, 18, 41 };
 		sortArray(arr);
